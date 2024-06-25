@@ -1,4 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: "lovely-flamingo-139.convex.cloud",
+            },
+            {
+                protocol: 'https',
+                hostname: "expert-stork-634.convex.cloud",
+            },
+            {
+                protocol: 'https',
+                hostname: "img.clerk.com",
+            }
+        ]
+    }
+};
 
 export default nextConfig;
